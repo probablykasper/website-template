@@ -1,0 +1,31 @@
+html body { background-color: white; margin: 0px; font-family: 'Roboto', Arial, sans-serif; color: black; }
+
+html p, html h1, html h2, html h3, html h4, html h5, html h6 { margin: 0px; font-weight: normal; }
+
+html .metadata { display: none; }
+
+html h1 { font-size: 50px; }
+
+html h2 { font-size: 35px; }
+
+html h3 { font-size: 30px; }
+
+html h4 { font-size: 25px; }
+
+html h5 { font-size: 20px; }
+
+html a, html a:link, html a:visited, html a:link:active, html a:visited:active { text-decoration: none; outline: none; color: white; }
+
+html img { display: block; }
+
+html input:focus, html button:focus, html textarea:focus, html div, html p { outline: none; }
+
+html input, html textarea, html button { font-family: 'Roboto', Arial, sans-serif; border: none; font-size: 16px; }
+
+html input[type="range"] { display: none; }
+
+html .flex-row { display: flex; justify-content: center; flex-direction: row; width: 100%; }
+
+html .flex-col { display: flex; justify-content: center; flex-direction: column; height: 100%; }
+
+html .invisible { visibility: none; }
