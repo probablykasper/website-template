@@ -1,11 +1,8 @@
 <?
 	include("includes/functions.php");
 	$slug = get_slug();
-	$skip_document = false;
-	$thatsa404 = false;
+	$skip_document = $thatsa404 = false;
 	// db_connect();
-
-
 
 	function slug_to_path($slug) {
 		if ($slug == "/") {
@@ -29,13 +26,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<!-- <title><?
-			if ($thatsa404) {
-				echo "404 sitename";
-			} else {
-				echo get_title($slug);
-			}
-		?></title> -->
+		<meta name="theme-color" content="#db5945">
+		<title><?= ($thatsa404) ? "404 Title" : get_title($slug)?></title>
 		<!--Roboto--> <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 		<!--Favicon: http://realfavicongenerator.net -->
 		<link rel="stylesheet" type="text/css" href="/css/global.css?r=<?=rand(0,999)?>">
@@ -46,12 +38,12 @@
 		<section id="body" class="body">
 			<? include("$include_path"); ?>
 		</section>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="/js/js.cookie-2.1.3.min.js"></script>
-		<script src="/js/rangeSlider.js"></script>
+		<!--jQuery--> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!--js.cookie--> <script src="/js/js.cookie-2.1.4.min.js"></script>
+		<!--rangeSlider--> <script src="/js/rangeSlider-0.3.11.min.js"></script>
 	</body>
 </html>
 <?
 	}
-	db_disconnect();
+	// db_disconnect();
 ?>

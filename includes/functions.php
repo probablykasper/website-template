@@ -1,17 +1,17 @@
 <?
 
-	// $css_paths = [
-	// 	"/" => "home.css",
-	// 	"/contact" => "contact.css"
-	// ];
-	// $titles = [
-	// 	"/" => "Sitename",
-	// 	"/contact" => "Contact"
-	// ];
-	// $js_paths = [
-	// 	"/" => "home.js",
-	// 	"/contact" => "contact.js"
-	// ];
+	$css_paths = [
+		"/" => "home.css",
+		"/contact" => "contact.css"
+	];
+	$titles = [
+		"/" => "Sitename",
+		"/contact" => "Contact"
+	];
+	$js_paths = [
+		"/" => "home.js",
+		"/contact" => "contact.js"
+	];
 
 // ----------------------------------------------------------------------------
 // GET THINGS
